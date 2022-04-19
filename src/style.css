@@ -1,0 +1,60 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #262626;
+    font-family: 'Inter', sans-serif;
+    color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.counter {
+    display: flex;
+    align-items: flex-end;
+}
+
+.counter > button {
+    height: 12vh;
+    width: 6vw;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background-color: #737373;
+    color: #d9d9d9;
+    font-size: 2rem;
+}
+
+.counter > button:hover {
+    background-color: #404040;
+    color: #d9d9d9;
+}
+
+.counter > button:focus {
+    outline: none;
+}
+
+.counter-count {
+    background-color: #fff;
+    height: 24vh;
+    width: 15vw;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #262626;
+    font-size: 2rem;
+}
+
+.counter-plus {
+    margin-left: -2rem;
+}
+
+.counter-minus {
+    margin-right: -2rem;
+    z-index: 1;
+}
